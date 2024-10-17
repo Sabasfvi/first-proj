@@ -1,12 +1,11 @@
-
 :root {
     --primary-color: rgba(135, 120, 175, 0.56);
     --secondary-color: rgba(236, 233, 244, 0.58);
     --third-color: rgba(194, 164, 234, 0.97);
-    --forth-color: #5b439c;
-
+    --forth-color: rgb(189, 156, 195);
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -14,40 +13,59 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(90deg,#ece9f4 32%, rgba(214, 199, 244, 0.71) 10%);
+    background: linear-gradient(90deg,#E7CFFF 32%, rgba(212, 186, 239, 0.4) 10%);
     margin: auto;
+    /*overflow: hidden;*/
 
 }
+
+/*  NAVBAR  */
+
 header {
     padding: 1.7rem 0;
     display: flex;
     justify-content: space-around;
     background-color: transparent;
     align-content: center;
+    margin: 1.7rem;
 }
-.img-responsive{
-    height: 20%;
-    width: 20%;
-    border-radius: 50%;
+
+.logo img {
+    max-width:40rem;
+    height: auto;
+    display: block;
 }
-nav{
+
+nav {
     z-index: 1;
+
 }
+
 nav a {
-   rgba(214, 199, 244, 0.71)
+    color: #33383C;
     text-decoration: none;
-    font-size: .97rem;
+    font-size: 1.20rem;
     font-weight: 600;
     padding: 0.4rem 1.3rem;
 
 }
+nav a:hover {
+    color: rgba(79, 4, 94, 0.56);
+    font-weight: bold;
+    text-shadow:  0 0 20px var(--primary-color);
+}
+/*چک باکس منو برای صفحات موبایل منو*/
 #click {
     display: none;
 }
-
+/*آیکون منو برای صفحات موبایل منو*/
 .menu {
     display: none;
+    cursor: pointer;
 }
+
+
+
 section {
     margin: 2rem 8.5rem;
 }
@@ -59,23 +77,27 @@ section {
     align-items: center;
     margin: 5rem auto;
 }
+
 .main h1 {
     font-size: 2.5rem;
     font-weight: 600;
     color: #33383C;
 }
+
 .Information {
     display: flex;
     flex-direction: column;
     align-items: end;
     margin: auto;
 }
+
 .social {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     margin-top: 1.7rem;
 }
+
 .social a {
     color: var(--secondary-color);
     font-size: 1rem;
@@ -89,6 +111,7 @@ section {
     place-items: center;
 
 }
+
 .social a:hover {
     color: #fff;
     background-color: var(--primary-color);
@@ -98,37 +121,80 @@ section {
     transition: all .3s ease-in-out;
 
 }
+
+/* IMAGE*/
+
 .images {
-    width:15em;
-    height: 15em;
+    width: 25em;
+    height: 25em;
     border-radius: 50%;
     margin: auto;
+    /*filter: drop-shadow(0 -6mm 4mm rgb(160, 0, 210));*/
 }
 
+.slogan p{
+    color:#3c3336;
+    font-weight: bold;
+    justify-content: start;
+    text-align: justify;
+    font-size: 10rem;
+    text-shadow: 16px 10px 6px #9483c1;
+    overflow: hidden;
+
+}
+
+
+
+
+/*ANIMATION*/
+
 .animated_text h1 {
-    -webkit-text-stroke: 1px var(--secondary-color);
+    -webkit-text-stroke: 1px #fff;
     font-family: Arial, Helvetica, sans-serif;
     color: transparent;
     background-repeat: no-repeat;
-    background-image: linear-gradient(var(--forth-color), var(--forth-color));
+    background-image: linear-gradient(var(--primary-color), var(--forth-color));
     -webkit-background-clip: text;
+    background-clip: none;
     background-position: -500px 0;
     animation: backcolor 5s linear infinite;
 }
+
 @keyframes backcolor {
 
     100% {
-        -webkit-text-stroke: 1px #33383C;
+        -webkit-text-stroke: 1px #3c3336;
         background-position: 0 0;
     }
 }
+
+
+
+@media only screen and (max-width: 1024px) {
+    html {
+        font-size: 80%;
+    }
+
+    section {
+        margin: 0;
+    }
+    .slogan{
+        display: none;
+    }
+
+
+}
+
 @media screen and (max-width: 768px) {
     html {
         font-size: 100%;
     }
 
     body {
-        background: linear-gradient(180deg, #33383C 35%, #ffffff 10%);
+        background: linear-gradient(180deg, rgba(212, 186, 239, 0.4)10%,#E7CFFF 35%);
+    }
+    .slogan{
+        display: none;
     }
 
     .menu {
@@ -170,6 +236,9 @@ section {
 }
 
 @media only screen and (max-width: 480px) {
+    .slogan{
+        display: none;
+    }
 
     section {
         margin: 0 1rem;
@@ -191,22 +260,18 @@ section {
     .images {
         height: 17em;
     }
-    .blue-bg-outer {
-        width: 16em;
-        height: 16em;
 
-    }
-
-
-    .blue-bg {
-        width: 11em;
-        height: 11em;
-    }
 
     .blue-bg img {
         position: relative;
         bottom: 20px;
         right: 10px;
         width: 100%;
+
     }
+    .slogan{
+        display: none;
+    }
+    
+
 }
