@@ -1,7 +1,7 @@
 :root {
-    --primary-color: rgba(135, 120, 175, 0.56);
-    --secondary-color: rgba(236, 233, 244, 0.97);
-    --third-color: rgba(194, 164, 234, 0.97);
+    --primary-color: rgb(166, 118, 211);
+    --secondary-color: rgba(109, 64, 230, 0.86);
+    --third-color: rgba(157, 29, 228, 0.31);
     --forth-color: rgb(189, 156, 195);
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
@@ -13,7 +13,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(90deg,#E7CFFF 32%, rgba(212, 186, 239, 0.4) 10%);
+    background: linear-gradient(90deg,#E7CFFF 28%, rgba(212, 184, 239, 0.15) 10%, rgba(143, 115, 202, 0.89));
     margin: auto;
     /*overflow: hidden;*/
 
@@ -39,9 +39,14 @@ header {
 nav {
     z-index: 1;
     margin: auto;
-    background:linear-gradient(90deg,#E7CFFF 32%, rgba(212, 186, 239, 0.4) 10%);
+    background:linear-gradient(90deg, rgba(231, 207, 255, 0.63) 19%, rgba(212, 186, 239, 0.93) 10%);
     padding: 1.7rem;
     border-radius: 45px;
+    width: 70%;
+    justify-content: right;
+    text-align: right;
+
+
 }
 
 nav a {
@@ -52,11 +57,13 @@ nav a {
     padding: 0.4rem 1.3rem;
 
 }
+
 nav a:hover {
     color: rgba(79, 4, 94, 0.56);
     font-weight: bold;
     text-shadow:  0 0 20px var(--primary-color);
 }
+
 /*چک باکس منو برای صفحات موبایل منو*/
 #click {
     display: none;
@@ -79,12 +86,21 @@ section {
     justify-content: space-between;
     align-items: center;
     margin: 5rem auto;
+
+
 }
 
 .main h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 600;
     color: #33383C;
+
+
+}
+.animated_text h1{
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.06);
+
 }
 
 .Information {
@@ -92,6 +108,7 @@ section {
     flex-direction: column;
     align-items: end;
     margin: auto;
+
 }
 
 .social {
@@ -104,7 +121,7 @@ section {
 .social a {
     color: var(--secondary-color);
     font-size: 1rem;
-    border: 1px solid #9483c1;
+    border: 2px solid #9483c1;
     border-radius: 50%;
     padding: 0.5rem;
     margin: 0.5rem;
@@ -117,10 +134,10 @@ section {
 }
 
 .social a:hover {
-    color: #fff;
-    background-color: var(--primary-color);
-    box-shadow: 0 0 20px var(--primary-color);
-    border-color: var(--secondary-color);
+    color: rgba(255, 255, 255, 0.53);
+    background-color: rgba(141, 117, 198, 0.56);
+    box-shadow: 0 0 20px ;
+    border-color: var(--third-color);
     border-radius: 10px;
     transition: all .3s ease-in-out;
 
@@ -134,18 +151,27 @@ section {
     border-radius: 50%;
     margin: auto;
     /*filter: drop-shadow(0 -6mm 4mm rgb(160, 0, 210));*/
+
 }
 
 .slogan p{
     color:#3c3336;
-    font-weight: bold;
-    justify-content: start;
-    text-align: justify;
-    font-size: 10rem;
+    font-weight:bold;
+    font-size:4rem;
     text-shadow: 16px 10px 6px #9483c1;
     overflow: hidden;
+    margin:3rem;
+    justify-content: center;
+    text-align: center;
+
 
 }
+.slogan{
+    display: flex;
+    flex-direction: row;
+
+}
+
 .images h2{
   display: none;
 
@@ -161,7 +187,7 @@ section {
     font-family: Arial, Helvetica, sans-serif;
     color: transparent;
     background-repeat: no-repeat;
-    background-image: linear-gradient(var(--primary-color), var(--forth-color));
+    background-image: linear-gradient(var(--primary-color), mediumorchid);
     -webkit-background-clip: text;
     background-clip: none;
     background-position: -500px 0;
@@ -193,7 +219,8 @@ section {
         display: flex;
         justify-content: center;
         text-align: center;
-        text-shadow: 6px 6px 6px #845fe8;
+        text-shadow: 6px 6px 6px rgba(132, 95, 232, 0.65);
+
 
     }
 
