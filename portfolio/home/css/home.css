@@ -1,6 +1,6 @@
 :root {
     --primary-color: rgba(135, 120, 175, 0.56);
-    --secondary-color: rgba(236, 233, 244, 0.58);
+    --secondary-color: rgba(236, 233, 244, 0.97);
     --third-color: rgba(194, 164, 234, 0.97);
     --forth-color: rgb(189, 156, 195);
 }
@@ -38,7 +38,10 @@ header {
 
 nav {
     z-index: 1;
-
+    margin: auto;
+    background:linear-gradient(90deg,#E7CFFF 32%, rgba(212, 186, 239, 0.4) 10%);
+    padding: 1.7rem;
+    border-radius: 45px;
 }
 
 nav a {
@@ -103,7 +106,8 @@ section {
     font-size: 1rem;
     border: 1px solid #9483c1;
     border-radius: 50%;
-    padding: 0.3rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
     text-align: center;
     width: 27px;
     height: 25px;
@@ -140,6 +144,10 @@ section {
     font-size: 10rem;
     text-shadow: 16px 10px 6px #9483c1;
     overflow: hidden;
+
+}
+.images h2{
+  display: none;
 
 }
 
@@ -181,7 +189,13 @@ section {
     .slogan{
         display: none;
     }
+    .images h2{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        text-shadow: 6px 6px 6px #845fe8;
 
+    }
 
 }
 
@@ -195,6 +209,7 @@ section {
     }
     .slogan{
         display: none;
+
     }
 
     .menu {
@@ -216,7 +231,7 @@ section {
         display: flex;
         flex-direction: column;
         text-align: center;
-        background-color: var(--primary-color);
+        background-color: #E7CFFF;
         left: -100%;
         width: 100%;
         top: 3rem;
@@ -225,12 +240,20 @@ section {
 
     nav a {
         color: #fff;
+        
     }
     #click:checked~nav {
         left: 0;
     }
     .Information {
         align-items: start;
+    }
+    .images h2{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+
     }
 
 }
@@ -272,6 +295,6 @@ section {
     .slogan{
         display: none;
     }
-    
+
 
 }
