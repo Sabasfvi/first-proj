@@ -1,5 +1,5 @@
 :root {
-    --primary-color: rgb(237, 100, 125);
+    --primary-color: rgb(132, 69, 195);
     --secondary-color: rgba(109, 64, 230, 0.86);
     --third-color: rgba(157, 29, 228, 0.31);
     --forth-color: rgb(189, 156, 195);
@@ -41,7 +41,7 @@ nav {
     margin: auto;
     background:linear-gradient(90deg, rgba(231, 207, 255, 0.63) 19%, rgba(212, 186, 239, 0.93) 10%);
     padding: 1.7rem;
-    border-radius: 45px;
+    border-radius: 45px ;
     width: 70%;
     justify-content: right;
     text-align: right;

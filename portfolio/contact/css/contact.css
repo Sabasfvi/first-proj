@@ -106,7 +106,7 @@ img {
     width: 100%;
     padding-block: 0.8rem;
     background: none;
-    color: hsl(0, 0%, 100%);
+    color: hsl(298, 71%, 64%);
     position: relative;
     z-index: 1;
 }
@@ -123,6 +123,7 @@ img {
     font-weight: 500;
     transition: top 0.3s, font-size 0.3s;
 }
+
 
 
 .contact__button {
@@ -145,7 +146,8 @@ img {
     padding-left: 1rem;
 }
 textarea::placeholder {
-    color: hsl(0, 0%, 100%);
+    color: hsl(298, 71%, 64%);
+   font-size: 1.25rem;
 }
 .sending-box{
     display: none;
@@ -153,13 +155,21 @@ textarea::placeholder {
 
 button:active{
 
-    border-color: hsla(270, 86%, 77%, 0.45);
+    background-color: hsla(270, 86%, 77%, 0.45);
     color:white;
     font-weight: bold;
-    box-shadow: 40px 40px 20px hsla(271, 76%, 38%, 0.66);
+
 
 }
-
+/*=====================بالارفتن متن ها===================*/
+.contact__input:not(:placeholder-shown).contact__input:not(:focus) + .contact-label {
+    top: -12px;
+    font-size: 0.813rem;
+}
+.contact__input:focus + .contact-label {
+    top: -12px;
+    font-size: 0.813rem;
+}
 
 /*=============== BREAKPOINTS ===============*/
 

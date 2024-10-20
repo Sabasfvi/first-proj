@@ -1,0 +1,54 @@
+:root {
+    --primary-color: rgb(132, 69, 195);
+    --secondary-color: rgba(109, 64, 230, 0.86);
+    --third-color: rgba(157, 29, 228, 0.31);
+    --forth-color: rgb(189, 156, 195);
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    /*background: linear-gradient(0.25turn, #E7CFFF , rgba(212, 184, 239, 0.15) , rgba(143, 115, 202, 0.89));*/
+    background: linear-gradient(90deg, #E7CFFF 28%, rgba(212, 184, 239, 0.15) 10%, rgba(143, 115, 202, 0.89));
+    margin: auto;
+}
+#menu-checkbox{
+    display: none;
+}
+.menu-icon__media{
+    display: none;
+}
+
+nav{
+
+    position: relative;
+    z-index: 1;
+    margin: auto;
+    display: flex;
+    justify-content: right;
+    text-align: right;
+}
+nav a{
+
+    text-decoration: none;
+    color:  #33383C;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 2rem 1.3rem ;
+
+}
+nav a:hover {
+    color: rgba(79, 4, 94, 0.56);
+    text-shadow:  0 0 20px var(--primary-color);
+    left: 0;
+    top: 13px;
+    font-weight: 500;
+    transition: top 0.8s, font-size 0.3s;
+}
+
+
+
