@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -10,6 +10,7 @@
     <title>Contact Us</title>
 </head>
 <body>
+
 <div class="contact">
     <img src="../Resources/image/contact/9659068.jpg" alt="background image" class="contact__img">
 
@@ -35,19 +36,23 @@
                 </div>
             </div>
 
-            <div class="contact__box">
+            <div class="contact__box" style=" border: none">
                 <i class="ri-chat-heart-line contact__icon" ></i>
 
-                <div class="contact__box-input">
-                    <input type="text" required class="contact__input" id="message" placeholder=" ">
-                    <label for="message" class="contact-label">Message</label>
+                <div class="contact__box-input" >
+                    <label for="message" class="contact-label">
+                        <textarea  required class="contact__input" id="message" placeholder="Hi Our Company ..."></textarea>
+
+                    </label>
+
                 </div>
             </div>
         </div>
 
-
-        <button type="submit" class="contact__button">SEND</button>
-
+        <script src="Script/contact.js"></script>
+        <button type="submit" class="contact__button" onclick="send()" >
+            SEND
+        </button>
 
     </form>
 </div>

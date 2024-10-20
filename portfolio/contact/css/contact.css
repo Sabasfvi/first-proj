@@ -15,7 +15,7 @@ button {
 }
 
 body {
-    color: hsl(0, 0%, 100%);
+    color: hsla(0, 0%, 100%, 0.96);
 }
 
 input,
@@ -61,6 +61,7 @@ img {
     height: 100%;
     object-fit: cover;
     object-position: center;
+
 }
 
 .container {
@@ -112,6 +113,7 @@ img {
 
 .contact__box-input {
     position: relative;
+
 }
 
 .contact-label{
@@ -132,13 +134,37 @@ img {
     cursor: pointer;
     margin-bottom: 2rem;
     margin-top: 4rem;
+
+}
+
+#message{
+    border-color:hsl(0, 0%, 100%);
+    max-width:15rem;
+    min-width: 15rem;
+    max-height: max-content;
+    padding-left: 1rem;
+}
+textarea::placeholder {
+    color: hsl(0, 0%, 100%);
+}
+.sending-box{
+    display: none;
+}
+
+button:active{
+
+    border-color: hsla(270, 86%, 77%, 0.45);
+    color:white;
+    font-weight: bold;
+    box-shadow: 40px 40px 20px hsla(271, 76%, 38%, 0.66);
+
 }
 
 
 /*=============== BREAKPOINTS ===============*/
-/* For medium devices */
+
 @media screen and (min-width: 576px) {
-    .login {
+    .contact {
         justify-content: center;
     }
 
@@ -148,7 +174,7 @@ img {
         border-radius: 1.5rem;
     }
 
-    .login__title {
+    .contact__title {
         font-size: 2rem;
     }
 }
