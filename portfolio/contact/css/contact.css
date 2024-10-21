@@ -31,6 +31,8 @@ a {
 img {
     max-width: 100%;
     height: auto;
+
+
 }
 .contact{
     position: relative;
@@ -53,6 +55,10 @@ img {
     display: grid;
     align-items: center;
     justify-content: center;
+
+
+
+
 }
 
 .contact__img {
@@ -61,6 +67,7 @@ img {
     height: 100%;
     object-fit: cover;
     object-position: center;
+
 
 }
 
@@ -72,6 +79,7 @@ img {
     padding: 2.5rem 1.5rem;
     border-radius: 1rem;
     backdrop-filter: blur(10px);
+
 }
 
 .contact__title {
@@ -106,13 +114,14 @@ img {
     width: 100%;
     padding-block: 0.8rem;
     background: none;
-    color: hsl(298, 71%, 64%);
+    color: hsl(276, 14%, 93%);
     position: relative;
     z-index: 1;
 }
 
 .contact__box-input {
     position: relative;
+
 
 }
 
@@ -121,7 +130,8 @@ img {
     left: 0;
     top: 13px;
     font-weight: 500;
-    transition: top 0.3s, font-size 0.3s;
+
+    /*transition: top 0.3s, font-size 0.3s;*/
 }
 
 
@@ -130,7 +140,7 @@ img {
     width: 100%;
     padding: 1rem;
     border-radius: 0.5rem;
-    background-color: hsl(270, 86%, 77%);
+    background-color: hsl(279, 75%, 58%);
     font-weight: 500;
     cursor: pointer;
     margin-bottom: 2rem;
@@ -146,8 +156,9 @@ img {
     padding-left: 1rem;
 }
 textarea::placeholder {
-    color: hsl(298, 71%, 64%);
-   font-size: 1.25rem;
+    color:white;
+   font-size: 1rem;
+
 }
 .sending-box{
     display: none;

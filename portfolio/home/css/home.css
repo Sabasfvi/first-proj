@@ -203,7 +203,31 @@ section {
 }
 
 
+.go-up {
+    position: sticky;
+    float: right;
+    /*background-color: plum;*/
 
+}
+.go-up p{
+    justify-content: center;
+    text-align: center;
+    font-weight: bold
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*=======================================*/
 @media only screen and (max-width: 1024px) {
     html {
         font-size: 80%;
