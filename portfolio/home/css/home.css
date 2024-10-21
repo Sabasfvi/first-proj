@@ -96,6 +96,7 @@ section {
     color: #33383C;
 
 
+
 }
 .animated_text h1{
     font-size: 3rem;
@@ -165,10 +166,13 @@ section {
     text-align: center;
 
 
+
+
 }
 .slogan{
     display: flex;
     flex-direction: row;
+
 
 }
 
@@ -204,30 +208,40 @@ section {
 
 
 .go-up {
-    position: sticky;
-    float: right;
-    /*background-color: plum;*/
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    /*float: right;*/
+    filter: drop-shadow(0 0 1rem #551988);
+
+
+
+
 
 }
+
 .go-up p{
+    font-size: 0.75rem;
+    color: purple;
     justify-content: center;
     text-align: center;
-    font-weight: bold
+    font-weight: bold;
+    text-shadow:0 0 0.79rem #bf25a5;
+
+
+}
+
+
+.go-up:hover{
+    cursor: pointer;
+    filter: drop-shadow(0 0 1rem #e7cfff);
 
 }
 
 
 
 
-
-
-
-
-
-
-
-
-/*=======================================*/
+/*==================RESPONSIVE=====================*/
 @media only screen and (max-width: 1024px) {
     html {
         font-size: 80%;
@@ -246,6 +260,9 @@ section {
         text-shadow: 6px 6px 6px rgba(132, 95, 232, 0.65);
 
 
+    }
+    .go-up{
+        display: none;
     }
 
 }
@@ -298,6 +315,7 @@ section {
     }
     .Information {
         align-items: start;
+        padding-top: 2rem;
     }
     .images h2{
         display: flex;
@@ -328,6 +346,7 @@ section {
         height: 12.75em;
     }
 
+
 }
 
 @media only screen and (max-width: 320px) {
@@ -346,6 +365,7 @@ section {
     .slogan{
         display: none;
     }
+
 
 
 }

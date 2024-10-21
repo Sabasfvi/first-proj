@@ -143,21 +143,26 @@ img {
     background-color: hsl(279, 75%, 58%);
     font-weight: 500;
     cursor: pointer;
-    margin-bottom: 2rem;
-    margin-top: 4rem;
+    margin-bottom: 0;
+    margin-top: 5rem;
 
 }
 
 #message{
     border-color:hsl(0, 0%, 100%);
+    border-width: 2px;
     max-width:15rem;
     min-width: 15rem;
-    max-height: max-content;
+    max-height:6rem;
     padding-left: 1rem;
+    padding-right: 1rem;
+
 }
 textarea::placeholder {
-    color:white;
-   font-size: 1rem;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.71);
+    font-size: 1rem;
+
 
 }
 .sending-box{
