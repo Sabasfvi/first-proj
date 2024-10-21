@@ -12,8 +12,9 @@
 }
 
 body {
+
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(90deg,#E7CFFF 28%, rgba(212, 184, 239, 0.15) 10%, rgba(143, 115, 202, 0.89));
+    background: linear-gradient(90deg,#E7CFFF 0, rgba(212, 184, 239, 0.15) 20%, rgba(143, 115, 202, 0.35));
     margin: auto;
     /*overflow: hidden;*/
 
@@ -27,7 +28,7 @@ header {
     justify-content: space-around;
     background-color: transparent;
     align-content: center;
-    margin: 1.7rem;
+    margin: 1rem;
 }
 
 .logo img {
@@ -36,15 +37,16 @@ header {
     display: block;
 }
 
+
 nav {
     z-index: 1;
     margin: auto;
-    background:linear-gradient(90deg, rgba(231, 207, 255, 0.63) 19%, rgba(212, 186, 239, 0.93) 10%);
+    background: linear-gradient(90deg, rgba(231, 207, 255, 0.3) 0, rgba(212, 184, 239, 0.15) 20%, rgba(143, 115, 202, 0.15));
     padding: 1.7rem;
-    border-radius: 45px ;
-    width: 70%;
-    justify-content: right;
-    text-align: right;
+    border-radius: 55px ;
+    width:75%;
+    justify-content: center;
+    text-align:center;
 
 
 }
@@ -78,6 +80,9 @@ nav a:hover {
 
 section {
     margin: 2rem 8.5rem;
+    background: linear-gradient(90deg,#E7CFFF 0, rgba(212, 184, 239, 0.15) 20%, rgba(143, 115, 202, 0.35));
+    border-radius:48% 15% 30% 15%;
+
 }
 
 .main {
@@ -123,7 +128,7 @@ section {
     color: var(--secondary-color);
     font-size: 1rem;
     border: 2px solid #9483c1;
-    border-radius: 50%;
+    border-radius: 42%;
     padding: 0.5rem;
     margin: 0.5rem;
     text-align: center;
@@ -168,10 +173,12 @@ section {
 
 
 
+
 }
 .slogan{
     display: flex;
     flex-direction: row;
+
 
 
 }
@@ -249,6 +256,7 @@ section {
 
     section {
         margin: 0;
+        background: none;
     }
     .slogan{
         display: none;
@@ -324,6 +332,10 @@ section {
 
 
     }
+    section {
+        margin: 0 1rem;
+        background: none;
+    }
 
 }
 
@@ -334,6 +346,7 @@ section {
 
     section {
         margin: 0 1rem;
+        background: none;
     }
     .images {
         min-width: 15em;
@@ -365,6 +378,7 @@ section {
     .slogan{
         display: none;
     }
+
 
 
 
